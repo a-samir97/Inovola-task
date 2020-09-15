@@ -44,3 +44,5 @@ http://127.0.0.1:8000/api/v1/all-coffee-pods?product_type=CPS&coffee_flavor=VA&p
 ```sh
 http://127.0.0.1:8000/api/v1/all-coffee-machines?product_type=CML&product_model=&water_line_compatible=
 ```
+
+- you can filter by any field in coffee machines and coffee pods
