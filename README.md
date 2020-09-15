@@ -20,6 +20,7 @@ machines screen, the user may filter by product type and water line. On the coff
 - Django restframework (for making RESTful API)
 
 ### Endpoints
+
 - to get all coffee pods 
 ```sh
 http://127.0.0.1:8000/api/v1/all-coffee-pods
@@ -28,4 +29,18 @@ http://127.0.0.1:8000/api/v1/all-coffee-pods
 - to get all coffee machines 
 ```sh
 http://127.0.0.1:8000/api/v1/all-coffee-machines
+```
+
+- filter the small pods 
+```sh
+http://127.0.0.1:8000/api/v1/all-coffee-pods?product_type=CPS&coffee_flavor=&pack_size=
+```
+
+- filter small coffees pods with vanilla falvor 
+```sh
+http://127.0.0.1:8000/api/v1/all-coffee-pods?product_type=CPS&coffee_flavor=VA&pack_size=
+```
+- filter large machine coffees
+```sh
+http://127.0.0.1:8000/api/v1/all-coffee-machines?product_type=CML&product_model=&water_line_compatible=
 ```
